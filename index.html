@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مشروع تحويل الصوت إلى نص والرد صوتي</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0077cc;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 220px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    #transcript, #response {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      margin-bottom: 25px;
+      min-height: 60px;
+      font-size: 16px;
+      white-space: pre-wrap;
+    }
+    audio {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎤 تحويل الصوت إلى نص والرد صوتي</h1>
+
+  <button id="recordBtn">🎙️ بدء التسجيل</button>
+
+  <div id="transcript" aria-label="النص المحول من الصوت">النص المحول سيظهر هنا...</div>
+
+  <div id="response" aria-label="الرد من الذكاء الاصطناعي">الرد سيظهر هنا...</div>
+
+  <audio id="audioPlayer" controls></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
